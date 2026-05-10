@@ -86,7 +86,15 @@ git clone https://github.com/yourusername/shipwrecked-android.git
 
 ## Screenshots
 
-*Coming soon*
+| Title Screen | Game Screen |
+|---|---|
+| ![Title Screen](Screen1.png) | ![Instructions](Screen2.png) |
+
+| Game Screen | Dice Roll |
+|---|---|
+| ![Dice Roll](Screen3.png) | ![Crafting](Screen4.png) |
+
+![Crafting](Screen5.png)
 
 ## What I Learned
 
