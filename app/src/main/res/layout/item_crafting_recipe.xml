@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#0D1F2D"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Item name and built badge -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/tvRecipeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Item Name"
+                android:textColor="#17B8C8"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cinzel_bold"/>
+
+            <TextView
+                android:id="@+id/tvBuiltBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUILT"
+                android:textColor="#1ABC9C"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvRecipeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#B8DCE8"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Cost -->
+        <TextView
+            android:id="@+id/tvRecipeCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cost: Wood x2, Vine x1"
+            android:textColor="#7AAABB"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Can afford indicator -->
+        <TextView
+            android:id="@+id/tvAffordable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Craft button -->
+        <Button
+            android:id="@+id/btnCraft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Craft"
+            android:backgroundTint="#0A7B8C"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

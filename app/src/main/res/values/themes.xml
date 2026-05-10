@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Shipwrecked" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0A7B8C</item>
+        <item name="colorPrimaryVariant">#055F6E</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#17B8C8</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:windowBackground">#060F1A</item>
+        <item name="colorSurface">#0D1F2D</item>
+        <item name="colorOnSurface">#B8DCE8</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">#0D1F2D</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

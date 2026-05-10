@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#060F1A"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHIPWRECKED"
+        android:textSize="40sp"
+        android:textColor="#17B8C8"
+        android:textStyle="bold"
+        android:fontFamily="@font/cinzel_bold"
+        android:letterSpacing="0.15"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Survive. Craft. Escape."
+        android:textSize="16sp"
+        android:textColor="#B8DCE8"
+        android:layout_marginBottom="64dp"/>
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_new_game"
+        android:textColor="#060F1A"
+        android:backgroundTint="#0A7B8C"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnHowToPlay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_how_to_play"
+        android:textColor="#B8DCE8"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCredits"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_credits"
+        android:textColor="#B8DCE8"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shipwrecked</string>
+    <string name="btn_new_game">New Game</string>
+    <string name="btn_how_to_play">How to Play</string>
+    <string name="btn_credits">Credits</string>
+    <string name="btn_crafting">Crafting</string>
+    <string name="btn_end_day">End Day</string>
+    <string name="btn_roll_dice">Roll the Dice</string>
+    <string name="label_health">Health</string>
+    <string name="label_hunger">Hunger</string>
+    <string name="label_energy">Energy</string>
+    <string name="label_day">Day</string>
+    <string name="label_wood">Wood</string>
+    <string name="label_vine">Vine</string>
+    <string name="label_food">Food</string>
+</resources>

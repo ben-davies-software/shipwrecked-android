@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#060F1A"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+    <!-- Ending icon / emoji -->
+    <TextView
+        android:id="@+id/tvEndingIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌊"
+        android:textSize="72sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Ending title -->
+    <TextView
+        android:id="@+id/tvEndingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Survived"
+        android:textColor="#17B8C8"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cinzel_bold"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Days survived -->
+    <TextView
+        android:id="@+id/tvDaysSurvived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You survived 14 days"
+        android:textColor="#7AAABB"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#0A7B8C"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Ending narrative -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <TextView
+            android:id="@+id/tvEndingNarrative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ending text goes here."
+            android:textColor="#B8DCE8"
+            android:textSize="15sp"
+            android:lineSpacingMultiplier="1.5"
+            android:gravity="center"/>
+
+    </ScrollView>
+
+    <!-- Score summary card -->
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#0D1F2D"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SURVIVAL SUMMARY"
+                android:textColor="#17B8C8"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Days Survived"
+                    android:textColor="#7AAABB"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvSummaryDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#B8DCE8"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Final Health"
+                    android:textColor="#7AAABB"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvSummaryHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#B8DCE8"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Items Crafted"
+                    android:textColor="#7AAABB"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvSummaryItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 / 5"
+                    android:textColor="#B8DCE8"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Score"
+                    android:textColor="#7AAABB"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvSummaryScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#17B8C8"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnPlayAgain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Play Again"
+            android:backgroundTint="#0A7B8C"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnMainMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Main Menu"
+            android:backgroundTint="#055F6E"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
